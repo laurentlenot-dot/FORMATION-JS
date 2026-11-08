@@ -63,22 +63,7 @@ footer {
   margin-top: 15px;
 }
 
-.btnFooter {
-  display: inline-block;
-  background-color: var(--secondary-gray);
-  color: #ffffff;
-  text-decoration: none;
-  padding: 8px 24px;
-  border-radius: 25px;
-  font-weight: bold;
-  font-size: 11px;
-  transition: background-color 0.2s ease;
-}
-
-.btnFooter:hover {
-  background-color: #8c8c8c;
-}
-
+.btnFooter,
 .btnTop {
   display: inline-block;
   background-color: var(--secondary-gray);
@@ -91,6 +76,7 @@ footer {
   transition: background-color 0.2s ease;
 }
 
+.btnFooter:hover,
 .btnTop:hover {
   background-color: #8c8c8c;
 }
@@ -99,7 +85,6 @@ footer {
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
-  auto-layout: 1fr,1fr;
 }
 
 .main-layout {
@@ -109,10 +94,14 @@ footer {
 }
 
 .product-list {
-    display: flex;
-    justify-content: space-between;
-    gap: 24px;
-    width: 100%;
+  width: 100%;
+  inline-size: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
 }
 
 .titre {
@@ -135,14 +124,4 @@ img {
   display: block;
   margin: 0 auto;
   border-radius: 5px;
-}
-
-.product-list {
-  inline-size: 100%;
-  width: 100%;
-  display: flex;
-  border-radius: 10px;
-  padding: 20px;
-  text-align: center;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
