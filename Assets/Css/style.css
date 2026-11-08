@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+  background-color: #DAD3C9;
+  color: #333333;
+  min-height: 100vh;
+  padding: 20px 40px;
+}
+
+/* Variables de couleurs */
+:root {
+  --primary-blue: #389ed6;
+  --primary-blue-hover: #2b82b3;
+  --text-dark: #1A1A1A;
+  --secondary-gray: #A3A3A3;
+  --footer: #1F5E5B;
+  --header: #1F5E5B;
+  --body-background: #DAD3C9;
+}
+
+.accueil {
+  font-size: 2rem;
+  color: var(--primary-blue);
+  text-align: center;
+  margin-bottom: 20px;
+  font-style: italic;
+}
+
+header {
+  background-color: var(--header);
+  color: white;
+  padding: 20px 40px;
+  text-align: center;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-nav {
+  display: flex;
+  gap: 15px;
+}
+
+footer {
+  background-color: var(--footer);
+  color: white;
+  padding: 20px;
+  text-align: center;
+  margin-top: 40px;
+  border-radius: 10px;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 15px;
+}
+
+.btnFooter {
+  display: inline-block;
+  background-color: var(--secondary-gray);
+  color: #ffffff;
+  text-decoration: none;
+  padding: 8px 24px;
+  border-radius: 25px;
+  font-weight: bold;
+  font-size: 11px;
+  transition: background-color 0.2s ease;
+}
+
+.btnFooter:hover {
+  background-color: #8c8c8c;
+}
+
+.btnTop {
+  display: inline-block;
+  background-color: var(--secondary-gray);
+  color: #ffffff;
+  text-decoration: none;
+  padding: 8px 24px;
+  border-radius: 25px;
+  font-weight: bold;
+  font-size: 11px;
+  transition: background-color 0.2s ease;
+}
+
+.btnTop:hover {
+  background-color: #8c8c8c;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  auto-layout: 1fr,1fr;
+}
+
+.main-layout {
+  display: flex;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.product-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+    width: 100%;
+}
+
+.titre {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 20px;
+  margin-left: 50px;
+}
+
+#btn-red {
+  width: 50px;
+  height: 50px;
+  background-color: red;
+  border-radius: 50%;
+
+}
